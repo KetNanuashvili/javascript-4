@@ -42,12 +42,18 @@
 */
 
 /* SECOND VERSION-*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
 .navigation-wraper{
     display: flex;
     justify-content: space-around;
     background-color:darkslategray;
     padding: 15px;
     position: relative;
+
 }
 #nav-ul{
     display: flex;
@@ -105,7 +111,7 @@ a{
     font-family: 'Dancing Script';
     color: bisque;
 }
-li{
+.class-li{
     font-size: 20px;
     margin-left: 35px;
     font-family: 'Dancing Script';
@@ -115,6 +121,25 @@ li{
 }
 .litag{
     margin-left: 0;
+}
+.new-i-element{
+    font-size: 25px;
+    color: blue;
+}
+@media (max-width: 580px){
+    .button-div{
+        margin-right: 30px;
+    }
+    #form-wraper{
+       flex-direction: column;
+       align-items: center;
+       width: 90%;
+       margin-bottom: 0px;
+    }
+    .btn-div-class{
+        width: 70%;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 480px){
@@ -139,4 +164,108 @@ li{
         margin-left: 0 !important;
         margin-bottom: 30px !important;
     }
+}
+
+
+/*button div*/
+.button-div{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-wraper{
+    max-width: 500px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-form-div{
+    max-width: 350px;
+    width: 70%;
+    height: 40px;
+}
+.input-form{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    border: none;
+    border: 2px solid darkslategrey;
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    color: darkslategrey;
+    cursor: pointer;
+}
+.btn-div-class{
+    height: 40px;
+    border: 2px solid darkslategrey;  
+}
+.btn-div-class2{
+    max-width: 100px;
+    width: 100%;
+}
+.btn-add{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Dancing Script';
+    color: darkslategrey;
+    font-weight: 750;
+    border: none;
+    cursor: pointer;
+    background-color: bisque;
+}
+.ul-items{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.fa-delete-left{
+    color: red;
+    font-size: 20px;
+}
+.clearall{
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Dancing Script';
+    color: darkslategrey;
+    font-weight: 750;
+    border: none;
+    cursor: pointer;
+    background-color: bisque;
+}
+.ul-tags-div{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+.btn-add{
+    margin-right: 0;
+}
+.second-uldivs-class{
+    display: flex;
+    flex-direction: column;
+}
+.second-button{
+    margin-top: 8px;
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: bisque;
+    border: 2px solid darkslategrey;
+    margin-bottom: 5px;
+}
+.delate-li{
+    font-family: 'Dancing Script';
+    color: darkslategrey;
+    font-weight: 750;  
+    font-size: 20px; 
+    display: flex;
+    flex-direction: column;
 }
